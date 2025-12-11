@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robert Hall Art</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- =================================================
+       HERO SECTION
+  ================================================== -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Robert Hall Art</h1>
+      <a href="#" class="hero-button">Get In Touch</a>
+      <a href="https://www.ebay.co.uk" target="_blank" class="hero-button">Shop the Store</a>
+    </div>
+  </section>
+
+
+  <!-- =================================================
+       GALLERY SECTION
+  ================================================== -->
+  <section class="photos-section" id="photos">
+    <div class="section-title">
+      <h2>Gallery</h2>
+      <!-- <p>Some selected recent works</p> -->
+    </div>
+    <div class="photo-grid">
+      <!-- Photos will be displayed here -->
+      <div class="photo-item" onclick="openLightbox(0)">
+        <img src="images/rhart1.jpg" alt="Porthtowan property view">
+      </div>
+      <div class="photo-item" onclick="openLightbox(1)">
+        <img src="images/rhart2.jpg" alt="Porthtowan beach house interior">
+      </div>
+      <div class="photo-item" onclick="openLightbox(2)">
+        <img src="images/rhart3.jpg" alt="Porthtowan living room">
+      </div>
+      <div class="photo-item" onclick="openLightbox(3)">
+        <img src="images/rhart4.jpg" alt="Porthtowan bedroom">
+      </div>
+      <div class="photo-item" onclick="openLightbox(4)">
+        <img src="images/rhart5.jpg" alt="Porthtowan kitchen">
+      </div>
+      <div class="photo-item" onclick="openLightbox(5)">
+        <img src="images/rhart6.jpg" alt="Porthtowan dining area">
+      </div>
+      <div class="photo-item" onclick="openLightbox(6)">
+        <img src="images/rhart7.jpg" alt="Porthtowan dining area">
+      </div>
+      <div class="photo-item" onclick="openLightbox(7)">
+        <img src="images/rhart8.jpg" alt="Porthtowan dining area">
+      </div>
+      <div class="photo-item" onclick="openLightbox(8)">
+        <img src="images/rhart_com_4.jpg" alt="Porthtowan dining area">
+      </div>
+    </div>
+    
+    <!-- Lightbox for photo gallery -->
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+      <span class="prev-btn" onclick="changeImage(-1)">&#10094;</span>
+      <span class="next-btn" onclick="changeImage(1)">&#10095;</span>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="">
+      </div>
+      <div class="lightbox-caption">
+        <p id="lightbox-caption-text"></p>
+      </div>
+    </div>
+  </section>
+
+<!-- =================================================
+     COMMISSIONS SECTION
+================================================== -->
+  <section class="image-text-section left-image commissions-section" id="commissions">
+    <div class="section-title">
+      <h2>Commissions</h2>
+    </div>
+
+    <div class="image-column">
+      <img src="images/rhart_com_3.jpg" alt="Commission artwork">
+    </div>
+
+    <div class="text-column">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+      </p>
+      <br>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+      </p>
+    </div>
+  </section>
+
+<!-- =================================================
+     EXHIBITIONS SECTION
+================================================== -->
+  <section class="image-text-section right-image exhibitions-section" id="exhibitions">
+    <div class="section-title">
+      <h2>Exhibitions</h2>
+    </div>
+
+    <div class="text-column">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+      </p>
+      <br>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+      </p>
+    </div>
+
+    <div class="image-column">
+      <img src="images/rhart_com_4.jpg" alt="Exhibition artwork">
+    </div>
+  </section>
+
+
+  <!-- =================================================
+       CONTACT FORM SECTION
+  ================================================== -->
+  <section class="contact-section">
+    <div class="section-title">
+      <h2>Get In Touch</h2>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- =================================================
+       FOOTER SECTION
+  ================================================== -->
+  <footer class="footer-section">
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">Commissions</a>
+      <a href="#">Exhibitions</a>
+      <a href="#">Contact Me</a>
+      <a href="https://www.ebay.co.uk" target="_blank">Store</a>
+    </div>
+    <p>© 2025 Robert Hall Art</p>
+  </footer>
+
+
+  <script>
+      // Array of image sources
+    const images = [
+      "images/rhart1.jpg",
+      "images/rhart2.jpg",
+      "images/rhart3.jpg",
+      "images/rhart4.jpg",
+      "images/rhart5.jpg",
+      "images/rhart6.jpg",
+      "images/rhart7.jpg",
+      "images/rhart8.jpg",
+      "images/rhart9.jpg"
+    ];
+
+    // Array of image captions
+    const captions = [
+      "picture title, description, size",
+      "picture title, description, size",
+      "picture title, description, size",
+      "picture title, description, size",
+      "picture title, description, size",
+      "picture title, description, size",
+      "picture title, description, size",
+      "picture title, description, size",
+      "picture title, description, size"
+    ];
+
+    let currentImageIndex = 0;
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const captionText = document.getElementById("lightbox-caption-text");
+
+    // Function to open lightbox
+    function openLightbox(index) {
+      currentImageIndex = index;
+      lightboxImg.src = images[currentImageIndex];
+      captionText.innerHTML = captions[currentImageIndex];
+      lightbox.style.display = "block";
+      document.body.style.overflow = "hidden"; // Prevent scrolling when lightbox is open
+    }
+
+    // Function to close lightbox
+    function closeLightbox() {
+      lightbox.style.display = "none";
+      document.body.style.overflow = "auto"; // Enable scrolling again
+    }
+
+    // Function to change displayed image
+    function changeImage(direction) {
+      currentImageIndex += direction;
+      
+      // Loop back to first image if at the end
+      if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+      }
+      
+      // Loop to last image if going back from first
+      if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1;
+      }
+      
+      lightboxImg.src = images[currentImageIndex];
+      captionText.innerHTML = captions[currentImageIndex];
+    }
+
+    // Close lightbox when clicking on overlay (outside the image)
+    lightbox.addEventListener("click", function(event) {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+      // Close lightbox with Escape key
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closeLightbox();
+      }
+    });
+
+  </script>
+
+</body>
+</html>
