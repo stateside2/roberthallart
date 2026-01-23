@@ -1,6 +1,10 @@
 /* =================================================
    ROBERT HALL GLOBAL STYLES
 ================================================== */
+:root {
+  --transition-speed: 0.9s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +15,12 @@
 
 html, body {
   overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 body {
-  background-color: #FFFDD0;
+  background-color: #FAFAF7;
   color: #1C2E4A;
   line-height: 1.6;
 }
@@ -52,7 +58,7 @@ section {
   color: var(--text-light);
   font-size: 1.2rem;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 /* =================================================
@@ -79,7 +85,8 @@ section {
 .hero-content h1 {
   font-size: 6em;
   margin-bottom: 0rem;
-  color: #FFFDD0;
+  /*color: #FFFDD0;*/
+  color: #FAFAF7;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
@@ -87,10 +94,13 @@ section {
   display: inline-block;
   margin-top: 15px;
   padding: 12px 30px;
+  /*background-color: #80C4C4;*/
   background-color: #80C4C4;
+  /*color: #1C2E4A;*/
   color: #1C2E4A;
   border: 2px solid #1C2E4A;
   text-decoration: none;
+  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 15px;
 }
@@ -117,7 +127,7 @@ section {
 }
 
 .photo-item:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .photo-item img {
@@ -213,7 +223,8 @@ section {
 /* FULL WIDTH COLOURED SECTIONS */
 .commissions-section,
 .exhibitions-section {
-  background-color: #BFD7EA;
+  /*background-color: #BFD7EA;*/
+  background-color: #CFE8E8;
   width: 100%;
   left: 0;
   right: 0;
@@ -226,7 +237,7 @@ section {
 
 /* Different colour for exhibitions */
 .exhibitions-section {
-  background-color: #FFFDD0;
+  background-color: #FAFAF7;
 }
 
 /* Keep content centred */
@@ -265,7 +276,7 @@ section {
 .image-column img {
   display: block;          /* removes inline-gap and baseline issues */
   width: 100%;
-  height: 380px;          /* fixed visual height for consistent alignment */
+  height: 380px;           /* fixed visual height for consistent alignment */
   max-width: 100%;
   object-fit: cover;      /* crop to fill without distortion */
   border-radius: 12px;
@@ -305,58 +316,90 @@ section {
 /* =================================================
    CONTACT FORM SECTION
 ================================================== */
-/*.contact-section {
-  padding: 60px 10%;
-  background-color: #f4f4f4;
-  text-align: center;
-}*/
-
-.contact-section {
-  background-color: #BFD7EA;
+.contactus {
+    display: grid;
+    /*justify-content: center; REMOVED AND ADDED place-items: SO THE CONTACT FORM COULD BE WIDER;*/
+    place-items: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/rhart_com_4.jpg) 80% 20%;
+    background-size: cover;
 }
 
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.cu_container {
+    opacity: 80%;
+    background: ghostwhite;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+.cu_container h1 {
+    margin-bottom: 20px;
+    color: darkslategrey;
 }
 
-.contact-form button {
-  padding: 12px;
-  background-color: #000000;
-  color: #ffffff;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
+.cu_container p {
+    color: darkslategrey;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form_button {
+    padding: 10px;
+    background-color: #0073e6;
+    color: ghostwhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form_button:hover {
+    background-color: #005bb5;
 }
 
 /* =================================================
    FOOTER SECTION
 ================================================== */
 .footer-section {
-  background-color: #222;
-  color: #fff;
+  background-color: #1C2E4A;
+  color: #FAFAF7;
   text-align: center;
-  padding: 40px 10%;
+  padding: 80px 10%;
 }
 
 .footer-links {
-  margin-bottom: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
 }
 
 .footer-links a {
-  color: #ffffff;
+  color: #FAFAF7;
   text-decoration: none;
   margin: 0 10px;
 }

@@ -97,9 +97,9 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: #FFFDD0;
+    background: #FAFAF7;
     /* 'color' is text color */
-    color: orangered; 
+    /*color: orangered; */
 
     transition: transform 1s ease-in-out;
     z-index: 2; /* on top */

@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="shortcut icon" href="images/rhart_icon.png">
   <title>Robert Hall Art</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 
   <!-- =================================================
        HERO SECTION
   ================================================== -->
-  <section class="hero-section">
+  <section class="hero-section" id="hero-section">
     <div class="hero-content">
       <h1>Robert Hall Art</h1>
-      <a href="#" class="hero-button">Get In Touch</a>
+      <a href="#contactus" class="hero-button">Get In Touch</a>
       <a href="https://www.ebay.co.uk" target="_blank" class="hero-button">Shop the Store</a>
     </div>
   </section>
@@ -26,36 +28,36 @@
   <section class="photos-section" id="photos">
     <div class="section-title">
       <h2>Gallery</h2>
-      <!-- <p>Some selected recent works</p> -->
+      <p>Some selected recent works. Click on an image to review more information.</p>
     </div>
     <div class="photo-grid">
       <!-- Photos will be displayed here -->
       <div class="photo-item" onclick="openLightbox(0)">
-        <img src="images/rhart1.jpg" alt="Porthtowan property view">
+        <img src="images/rhart4.jpg" alt="rhart1">
       </div>
       <div class="photo-item" onclick="openLightbox(1)">
-        <img src="images/rhart2.jpg" alt="Porthtowan beach house interior">
+        <img src="images/rhart2.jpg" alt="rhart2">
       </div>
       <div class="photo-item" onclick="openLightbox(2)">
-        <img src="images/rhart3.jpg" alt="Porthtowan living room">
+        <img src="images/rhart3.jpg" alt="rhart3">
       </div>
       <div class="photo-item" onclick="openLightbox(3)">
-        <img src="images/rhart4.jpg" alt="Porthtowan bedroom">
+        <img src="images/rhart6.jpg" alt="rhart4">
       </div>
       <div class="photo-item" onclick="openLightbox(4)">
-        <img src="images/rhart5.jpg" alt="Porthtowan kitchen">
+        <img src="images/rhart5.jpg" alt="rhart5">
       </div>
       <div class="photo-item" onclick="openLightbox(5)">
-        <img src="images/rhart6.jpg" alt="Porthtowan dining area">
+        <img src="images/rhart1.jpg" alt="rhart6">
       </div>
       <div class="photo-item" onclick="openLightbox(6)">
-        <img src="images/rhart7.jpg" alt="Porthtowan dining area">
+        <img src="images/rhart7.jpg" alt="rhart7">
       </div>
       <div class="photo-item" onclick="openLightbox(7)">
-        <img src="images/rhart8.jpg" alt="Porthtowan dining area">
+        <img src="images/rhart8.jpg" alt="rhart8">
       </div>
       <div class="photo-item" onclick="openLightbox(8)">
-        <img src="images/rhart_com_4.jpg" alt="Porthtowan dining area">
+        <img src="images/rhart_com_4.jpg" alt="rhart9">
       </div>
     </div>
     
@@ -82,7 +84,7 @@
     </div>
 
     <div class="image-column">
-      <img src="images/rhart_com_3.jpg" alt="Commission artwork">
+      <img src="images/rhart_com_2.jpg" alt="Commission artwork">
     </div>
 
     <div class="text-column">
@@ -115,7 +117,7 @@
     </div>
 
     <div class="image-column">
-      <img src="images/rhart_com_4.jpg" alt="Exhibition artwork">
+      <img src="images/rhart_com_3.jpg" alt="Exhibition artwork">
     </div>
   </section>
 
@@ -123,16 +125,29 @@
   <!-- =================================================
        CONTACT FORM SECTION
   ================================================== -->
-  <section class="contact-section">
+  <section class="contactus" id="contactus">
     <div class="section-title">
       <h2>Get In Touch</h2>
     </div>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="cu_container">
+      <form action="https://submit-form.com/lckTaUQGT" method="POST" autocomplete="off" data-botpoison-public-key="pk_d7b17a2b-624b-4432-8f37-f63283d028af">
+        <input type="text" id="name" name="name" placeholder="Name" autocomplete="off" required="" />
+        <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" required="" />
+        <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+        <!-- DISPLAYS THE DARK VERSION OF THE FEEDBACK PAGE -->
+        <input type="hidden" name="_feedback.dark" value="true" />
+        <!-- DISPLAYS CUSTOM SUCCESS TITLE AND MESSAGE -->
+        <input type="hidden" name="_feedback.success.title" value="Thank you for your message" />
+        <input type="hidden" name="_feedback.success.message" value="I'll be in touch soon" />
+        <!-- SETS THE SUBJECT OF THE EMAIL -->
+        <input type="hidden" name="_email.subject" value="ROBERT HALL ART website message" />
+        <!-- SETS THE NAME OF THE EMAIL SENDER -->
+        <input type="hidden" name="_email.from" value="ROBERT HALL ART" />
+        <input type="hidden" name="_email.template.title" value="false" />
+        <input type="hidden" name="_email.template.footer" value="false" />
+        <button type="submit" class="form_button">Submit</button>
+      </form>
+    </div>
   </section>
 
   <!-- =================================================
@@ -140,29 +155,29 @@
   ================================================== -->
   <footer class="footer-section">
     <div class="footer-links">
-      <a href="#">Home</a>
-      <a href="#">Gallery</a>
-      <a href="#">Commissions</a>
-      <a href="#">Exhibitions</a>
-      <a href="#">Contact Me</a>
+      <a href="#hero-section">Home</a>
+      <a href="#photos">Gallery</a>
+      <a href="#commissions">Commissions</a>
+      <a href="#exhibitions">Exhibitions</a>
+      <a href="#contactus">Get In Touch</a>
       <a href="https://www.ebay.co.uk" target="_blank">Store</a>
     </div>
-    <p>© 2025 Robert Hall Art</p>
+    <p>© 2026 Robert Hall Art</p>
   </footer>
 
 
   <script>
       // Array of image sources
     const images = [
-      "images/rhart1.jpg",
+      "images/rhart4.jpg",
       "images/rhart2.jpg",
       "images/rhart3.jpg",
-      "images/rhart4.jpg",
-      "images/rhart5.jpg",
       "images/rhart6.jpg",
+      "images/rhart5.jpg",
+      "images/rhart1.jpg",
       "images/rhart7.jpg",
       "images/rhart8.jpg",
-      "images/rhart9.jpg"
+      "images/rhart_com_4.jpg"
     ];
 
     // Array of image captions
