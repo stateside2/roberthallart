@@ -22,7 +22,7 @@ html, body {
 body {
   background-color: #FAFAF7;
   color: #1C2E4A;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 /* Section styles */
@@ -217,12 +217,27 @@ section {
   font-size: 1.2rem;
 }
 
+.gallery-store-button {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 12px 30px;
+  /*background-color: #80C4C4;*/
+  background-color: #CFE8E8;
+  color: #1C2E4A;
+  border: 3px solid #1C2E4A;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px;
+}
+
 /* =================================================
    IMAGE + TEXT SECTION STYLES 
 ================================================== */
 /* FULL WIDTH COLOURED SECTIONS */
 .commissions-section,
-.exhibitions-section {
+.aboutme-section {
   /*background-color: #BFD7EA;*/
   background-color: #CFE8E8;
   width: 100%;
@@ -235,14 +250,14 @@ section {
   box-sizing: border-box;
 }
 
-/* Different colour for exhibitions */
-.exhibitions-section {
+/* Different colour for About Me */
+.aboutme-section {
   background-color: #FAFAF7;
 }
 
 /* Keep content centred */
 .commissions-section > *,
-.exhibitions-section > * {
+.aboutme-section > * {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -286,8 +301,8 @@ section {
 /* optional: keep text comfortable and vertically centered */
 .text-column {
   font-size: 1.05rem;
-  line-height: 1.8;
-  padding: 0 0.5rem;
+  line-height: 1.6;
+  padding: 0 2rem;
   align-self: center;     /* ensure text column vertically centres with the image */
 }
 
