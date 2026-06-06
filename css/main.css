@@ -240,13 +240,6 @@ section {
 .aboutme-section {
   /*background-color: #BFD7EA;*/
   background-color: #CFE8E8;
-  width: 100%;
-  left: 0;
-  right: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
   box-sizing: border-box;
 }
 
@@ -255,12 +248,10 @@ section {
   background-color: #FAFAF7;
 }
 
-/* Keep content centred */
-.commissions-section > *,
-.aboutme-section > * {
+.commissions-section,
+.aboutme-section {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
@@ -291,7 +282,8 @@ section {
 .image-column img {
   display: block;          /* removes inline-gap and baseline issues */
   width: 100%;
-  height: 380px;           /* fixed visual height for consistent alignment */
+  /* height: 380px;           fixed visual height for consistent alignment */
+  height: clamp(250px, 35vw, 380px);
   max-width: 100%;
   object-fit: cover;      /* crop to fill without distortion */
   border-radius: 12px;
@@ -307,7 +299,7 @@ section {
 }
 
 /* Responsive: stack columns on narrow viewports */
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
   .image-text-section {
     grid-template-columns: 1fr;
     text-align: center;
@@ -318,14 +310,14 @@ section {
   }
 
   .image-column img {
-    height: auto;         /* let images size naturally on small screens */
+    height: auto;
     max-height: none;
   }
 
   .text-column {
     padding: 0 1rem;
   }
-}
+}*/
 
 
 /* =================================================
@@ -422,18 +414,8 @@ textarea {
 /* =================================================
    RESPONSIVE ADJUSTMENTS FOR LAPTOP/TABLET
 ================================================== */
-@media (max-width: 1200px) {
-  .image-text-section {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .text-column {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
   .image-text-section {
     grid-template-columns: 1fr;
     text-align: center;
@@ -445,5 +427,104 @@ textarea {
   .right-image .text-column {
     grid-column: 1;
   }
+}*/
+
+/* =================================================
+   RESPONSIVE LAYOUT
+================================================== */
+@media (max-width: 900px) {
+
+  /* Hero */
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-button {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 0;
+  }
+
+  /* Gallery */
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-item {
+    height: auto;
+  }
+
+  .photo-item img {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Commissions / About Me */
+  .image-text-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .image-column,
+  .text-column {
+    grid-column: 1;
+  }
+
+  .image-column img {
+    height: auto;
+    max-height: 500px;
+  }
+
+  .text-column {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  /* Section spacing */
+  section {
+    padding: 4rem 1rem;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+
+  /* Contact form */
+  .cu_container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-links a {
+    margin: 0;
+  }
+
+  /* Lightbox navigation */
+  .prev-btn,
+  .next-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .prev-btn {
+    left: 0.5rem;
+  }
+
+  .next-btn {
+    right: 0.5rem;
+  }
 }
+
 
