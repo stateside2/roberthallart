@@ -23,50 +23,65 @@
 
 
   <!-- =================================================
-       GALLERY SECTION
+       GALLERY FOR SALE SECTION
   ================================================== -->
   <section class="photos-section" id="photos">
     <div class="section-title">
-      <h2>Gallery</h2>
-      <p>Some selected recent works. Click on an image to review more information.</p>
+      <h2>Available Paintings</h2>
+      <p>Current works available for sale. Click on an image to review more information.</p>
     </div>
     <div class="photo-grid">
       <!-- Photos will be displayed here -->
       <div class="photo-item" onclick="openLightbox(0)">
-        <img src="images/rhart4.jpg" alt="rhart1">
+        <img src="images/afterthestorm36x26acrylic.jpg" alt="After The Storm">
       </div>
       <div class="photo-item" onclick="openLightbox(1)">
-        <img src="images/rhart2.jpg" alt="rhart2">
+        <img src="images/endoftheday36x28oil.jpg" alt="End Of The Day">
       </div>
       <div class="photo-item" onclick="openLightbox(2)">
-        <img src="images/rhart3.jpg" alt="rhart3">
+        <img src="images/fernworthy36x26acrylic.jpg" alt="Fernworthy">
       </div>
       <div class="photo-item" onclick="openLightbox(3)">
-        <img src="images/rhart6.jpg" alt="rhart4">
+        <img src="images/goldenbrook30x23acrylic.jpg" alt="Golden Brook">
       </div>
       <div class="photo-item" onclick="openLightbox(4)">
-        <img src="images/rhart5.jpg" alt="rhart5">
+        <img src="images/midnighttide36x26acrylic.jpg" alt="Midnight Tide">
       </div>
       <div class="photo-item" onclick="openLightbox(5)">
-        <img src="images/rhart1.jpg" alt="rhart6">
+        <img src="images/noturningback30x23acrylic.jpg" alt="No Turning Back">
       </div>
       <div class="photo-item" onclick="openLightbox(6)">
-        <img src="images/rhart7.jpg" alt="rhart7">
+        <img src="images/openair30x23acrylic.jpg" alt="Open Air">
       </div>
       <div class="photo-item" onclick="openLightbox(7)">
-        <img src="images/rhart8.jpg" alt="rhart8">
+        <img src="images/pathinthewoods30x23acrylic.jpg" alt="Path In The Woods">
       </div>
       <div class="photo-item" onclick="openLightbox(8)">
-        <img src="images/rhart_com_4.jpg" alt="rhart9">
+        <img src="images/praguesteps30x23acrylic.jpg" alt="Prague Steps">
       </div>
       <div class="photo-item" onclick="openLightbox(9)">
-        <img src="images/rhart_com_1.jpg" alt="rhart10">
+        <img src="images/rokersunrise36x28acrylic.jpg" alt="Roker Sunrise">
       </div>
       <div class="photo-item" onclick="openLightbox(10)">
-        <img src="images/rhart_com_3.jpg" alt="rhart11">
+        <img src="images/somethingintheair36x26acrylic.jpg" alt="Something In The Air">
       </div>
       <div class="photo-item" onclick="openLightbox(11)">
-        <img src="images/rhart6.jpg" alt="rhart12">
+        <img src="images/sparkles30x23oil.jpg" alt="Sparkles">
+      </div>
+      <div class="photo-item" onclick="openLightbox(12)">
+        <img src="images/steps30x23acrylic.jpg" alt="Steps">
+      </div>
+      <div class="photo-item" onclick="openLightbox(13)">
+        <img src="images/summerflowers30x23acrylic.jpg" alt="Summer Flowers">
+      </div>
+      <div class="photo-item" onclick="openLightbox(14)">
+        <img src="images/thecrossing30x23acrylic.jpg" alt="The Crossing">
+      </div>
+      <div class="photo-item" onclick="openLightbox(15)">
+        <img src="images/treeonthehill36x26acrylic.jpg" alt="Tree On The Hill">
+      </div>
+      <div class="photo-item" onclick="openLightbox(16)">
+        <img src="images/whitehorses30x23oil.jpg" alt="White Horses">
       </div>
     </div>
 
@@ -74,6 +89,66 @@
       <center>
         <a href="https://ebay.us/m/CToO6f" target="_blank" class="gallery-store-button">Visit the Store</a>
       </center>
+    </div>
+    
+    <!-- Lightbox for photo gallery -->
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+      <span class="prev-btn" onclick="changeImage(-1)">&#10094;</span>
+      <span class="next-btn" onclick="changeImage(1)">&#10095;</span>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="">
+      </div>
+      <div class="lightbox-caption">
+        <p id="lightbox-caption-text"></p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =================================================
+       GALLERY SOLD SECTION
+  ================================================== -->
+  <section class="photos-section" id="photos">
+    <div class="section-title">
+      <h2>Donated Or Sold Paintings</h2>
+      <p>Click on an image to review more information.</p>
+    </div>
+    <div class="photo-grid">
+      <!-- Photos will be displayed here -->
+      <div class="photo-item" onclick="openLightbox(17)">
+        <img src="images/crashingwave30x23acrylic.jpg" alt="Crashing Wave">
+      </div>
+      <div class="photo-item" onclick="openLightbox(18)">
+        <img src="images/bluebellwoods30x23acrylic.jpg" alt="Bluebell Woods">
+      </div>
+      <div class="photo-item" onclick="openLightbox(19)">
+        <img src="images/droplets18x12acrylic.jpg" alt="Droplets">
+      </div>
+      <div class="photo-item" onclick="openLightbox(20)">
+        <img src="images/charlotte30x23acrylic.jpg" alt="Charlotte">
+      </div>
+      <div class="photo-item" onclick="openLightbox(21)">
+        <img src="images/marley30x23acrylic.jpg" alt="Marley">
+      </div>
+      <div class="photo-item" onclick="openLightbox(22)">
+        <img src="images/lookingup18x13acrylic.jpg" alt="Looking Up">
+      </div>
+      <div class="photo-item" onclick="openLightbox(23)">
+        <img src="images/eveningreflections18x13acrylic.jpg" alt="Evening Reflections">
+      </div>
+      <div class="photo-item" onclick="openLightbox(24)">
+        <img src="images/cornflowersatdusk30x23oil.jpg" alt="Cornflowers At Dusk">
+      </div>
+      <div class="photo-item" onclick="openLightbox(25)">
+        <img src="images/amencorner30x23acrylic.jpg" alt="Amen Corner">
+      </div>
+      <div class="photo-item" onclick="openLightbox(26)">
+        <img src="images/standrews30x23acrylic.jpg" alt="St Andrews">
+      </div>
+      <div class="photo-item" onclick="openLightbox(27)">
+        <img src="images/justamoment36x26acrylic.jpg" alt="Just A Moment">
+      </div>
     </div>
     
     <!-- Lightbox for photo gallery -->
@@ -192,34 +267,66 @@
   <script>
       // Array of image sources
     const images = [
-      "images/rhart4.jpg",
-      "images/rhart2.jpg",
-      "images/rhart3.jpg",
-      "images/rhart6.jpg",
-      "images/rhart5.jpg",
-      "images/rhart1.jpg",
-      "images/rhart7.jpg",
-      "images/rhart8.jpg",
-      "images/rhart_com_4.jpg",
-      "images/rhart_com_1.jpg",
-      "images/rhart_com_3.jpg",
-      "images/rhart6.jpg"
+      "images/afterthestorm36x26acrylic.jpg",
+      "images/endoftheday36x28oil.jpg",
+      "images/fernworthy36x26acrylic.jpg",
+      "images/goldenbrook30x23acrylic.jpg",
+      "images/midnighttide36x26acrylic.jpg",
+      "images/noturningback30x23acrylic.jpg",
+      "images/openair30x23acrylic.jpg",
+      "images/pathinthewoods30x23acrylic.jpg",
+      "images/praguesteps30x23acrylic.jpg",
+      "images/rokersunrise36x28acrylic.jpg",
+      "images/somethingintheair36x26acrylic.jpg",
+      "images/sparkles30x23oil.jpg",
+      "images/steps30x23acrylic.jpg",
+      "images/summerflowers30x23acrylic.jpg",
+      "images/thecrossing30x23acrylic.jpg",
+      "images/treeonthehill36x26acrylic.jpg",
+      "images/whitehorses30x23oil.jpg",
+      "images/crashingwave30x23acrylic.jpg",
+      "images/bluebellwoods30x23acrylic.jpg",
+      "images/droplets18x12acrylic.jpg",
+      "images/charlotte30x23acrylic.jpg",
+      "images/marley30x23acrylic.jpg",
+      "images/lookingup18x13acrylic.jpg",
+      "images/eveningreflections18x13acrylic.jpg",
+      "images/cornflowersatdusk30x23oil.jpg",
+      "images/amencorner30x23acrylic.jpg",
+      "images/standrews30x23acrylic.jpg",
+      "images/justamoment36x26acrylic.jpg"
     ];
 
     // Array of image captions
     const captions = [
-      "picture title, description, size",
-      "picture title, description, size",
-      "picture title, description, size",
-      "picture title, description, size",
-      "picture title, description, size",
-      "picture title, description, size",
-      "picture title, description, size",
-      "picture title, description, size",
-      "picture title, description, size",
-      "picture title, description, size",
-      "picture title, description, size",
-      "picture title, description, size"
+      "After The Storm, acrylic, 36cm x 26cm",
+      "End Of The Day, oil, 36cm x 28cm",
+      "Fernworthy, acrylic, 36cm x 26cm",
+      "Golden Brook, acrylic, 30cm x 23cm",
+      "Midnight Tide, acrylic, 36cm x 26cm",
+      "No Turning Back, acrylic, 30cm x 23cm",
+      "Open Air, acrylic, 30cm x 23cm",
+      "Path In The Woods, acrylic, 30cm x 23cm",
+      "Prague Steps, acrylic, 30cm x 23cm",
+      "Roker Sunrise, acrylic, 36cm x 28cm",
+      "Something In The Air, acrylic, 36cm x 26cm",
+      "Sparkles, oil, 30cm x 23cm",
+      "Steps, acrylic, 30cm x 23cm",
+      "Summer Flowers, acrylic, 30cm x 23cm",
+      "The Crossing, acrylic, 30cm x 23cm",
+      "Tree On The Hill, acrylic, 36cm x 26cm",
+      "White Horses, oil, 30cm x 23cm",
+      "Crashing Wave, acrylic, 30cm x 23cm",
+      "Bluebell Woods, acrylic, 30cm x 23cm",
+      "Droplets, acrylic, 18cm x 12cm",
+      "Charlotte, acrylic, 30cm x 23cm",
+      "Marley, acrylic, 30cm x 23cm",
+      "Looking Up, acrylic, 18cm x 13cm",
+      "Evening Reflections, acrylic, 18cm x 13cm",
+      "Cornflowers At Dusk, oil, 30cm x 23cm",
+      "Amen Corner, acrylic, 30cm x 23cm",
+      "St Andrews, acrylic, 30cm x 23cm",
+      "Just A Moment, acrylic, 36cm x 26cm"
     ];
 
     let currentImageIndex = 0;
